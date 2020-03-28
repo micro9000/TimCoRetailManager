@@ -32,5 +32,10 @@ namespace TRMDesktopUI.Library.Models
 		{
 			get; set;
 		}
+
+		public bool IsTaxable
+		{
+			get; set;
+		}
 	}
 }

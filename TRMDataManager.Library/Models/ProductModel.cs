@@ -32,5 +32,10 @@ namespace TRMDataManager.Library.Models
 		{
 			get; set;
 		}
+
+		public bool IsTaxable
+		{
+			get; set;
+		}
 	}
 }
