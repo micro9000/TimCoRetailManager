@@ -20,8 +20,14 @@ namespace TRMDataManager.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+        // Once you change the database name for EntityFramework
+        // Goto NuGet Package Manager console
+        // Type:
+        // enable-migrations
+        // update-database --> error: Unable to update database to match the current model because there are pending changes and automatic migration is disabled. Either write the pending model changes to a code-based migration or enable
+        // 
+        public ApplicationDbContext ()
+            : base("EFData", throwIfV1Schema: false)
         {
         }
         
