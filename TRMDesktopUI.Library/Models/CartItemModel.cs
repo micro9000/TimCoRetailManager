@@ -17,13 +17,5 @@ namespace TRMDesktopUI.Library.Models
 		{
 			get; set;
 		}
-
-		public string DisplayText
-		{
-			get
-			{
-				return $"{Product.ProductName} ({QuantityInCart})";
-			}
-		}
 	}
 }
