@@ -39,7 +39,7 @@ namespace TRMDesktopUI.Library.Models
 			get; set;
 		}
 
-		public void LogOffUser ()
+		public void ResetUserModel ()
 		{
 			Token = "";
 			Id = "";

@@ -35,6 +35,6 @@ namespace TRMDesktopUI.Library.Models
 			set;
 		}
 
-		void LogOffUser ();
+		void ResetUserModel ();
 	}
 }
