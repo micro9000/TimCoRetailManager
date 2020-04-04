@@ -20,7 +20,7 @@ namespace TRMDataManager.Library.DataAccess
 			List<SaleDetailDBModel> details = new List<SaleDetailDBModel>();
 			ProductData products = new ProductData();
 			var taxRate = ConfigHelper.GetTaxRate() / 100;
-
+			 
 			foreach (var item in saleInfo.SaleDetails)
 			{
 				var detail = new SaleDetailDBModel
@@ -83,7 +83,7 @@ namespace TRMDataManager.Library.DataAccess
 						sql.SaveDataInTransaction("dbo.spSaleDetail_Insert", item);
 					}
 
-					//sql.CommitTransaction();
+					sql.CommitTransaction();
 				}
 				catch // (Exception ex)
 				{
