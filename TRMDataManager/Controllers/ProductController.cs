@@ -9,7 +9,7 @@ using TRMDataManager.Library.Models;
 
 namespace TRMDataManager.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Cashier")] // Cashier,Admin -> for multi role
     [RoutePrefix("api/Product")]
     public class ProductController : ApiController
     {
