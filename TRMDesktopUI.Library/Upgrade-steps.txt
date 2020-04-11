@@ -1,0 +1,18 @@
+﻿-> Right click of the Project
+-> Click Unload Project
+-> Right Click TRMDesktopUI.Library.csproj
+-> Delete all in this file
+-> Add below lines
+	<Project Sdk="Microsoft.NET.sdk">
+		<PropertyGroup>
+			<TargetFramework>netstandard2.0</TargetFramework>
+		</PropertyGroup>
+	</Project>
+-> Right click and reload the project
+-> Delete AssemblyInfo.cs
+-> Install the ff NuGet Pkg:
+	-> Microsoft.AspNet.WebApi.Client
+	-> System.Configuration.ConfigurationManager
+-> Delete packages.config
+-> Delete app.config
+
