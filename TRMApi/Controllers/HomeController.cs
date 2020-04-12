@@ -30,9 +30,10 @@ namespace TRMApi.Controllers
 
 		public IActionResult Privacy ()
 		{
-			// Make is async Task<>
+			//Make is async Task<>
 
-			//string[] roles = {"Admin", "Manager", "Cashier"};
+		 //  string[] roles = {
+			//	"Admin", "Manager", "Cashier"};
 
 			//foreach (var role in roles)
 			//{
@@ -45,7 +46,7 @@ namespace TRMApi.Controllers
 			//}
 
 
-			//var user = await _userManager.FindByEmailAsync("zbdynv@onsemi.com");
+			//var user = await _userManager.FindByEmailAsync("admin@email.com");
 
 			//if (user != null)
 			//{
